@@ -1,0 +1,27 @@
+.routine-logo {
+    text-align: left;
+    font-size: 40px;
+    background: linear-gradient(to left,
+            rgb(201, 146, 201),
+            rgb(109, 51, 151),
+            rgb(115, 115, 187),
+            green,
+            rgb(211, 211, 95),
+            rgb(189, 146, 73),
+            rgb(170, 134, 134));
+    -webkit-background-clip: text;
+    color: transparent;
+ 
+  }
+  .black
+ { background-color: rgb(14, 3, 3);
+  color: rgb(250, 234, 234);
+  border: 2px solid #0e0a0a;
+padding: 6px;
+border-radius:  15px;
+width: 500px;}
+
+.p{
+    cursor: pointer;
+    text-decoration: underline;
+}

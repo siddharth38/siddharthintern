@@ -1,0 +1,258 @@
+
+
+
+
+.navbar {
+    background: #dbdfdc;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 1px 4px 8px rgb(20, 15, 15);
+    color: #e9e4e4;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+  }
+  
+  .container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  .navbar-logo {
+    text-align: center;
+    font-size: 70px;
+    background: linear-gradient(to left,
+            rgb(201, 146, 201),
+            rgb(109, 51, 151),
+            rgb(115, 115, 187),
+            green,
+            rgb(211, 211, 95),
+            rgb(189, 146, 73),
+            rgb(170, 134, 134));
+    -webkit-background-clip: text;
+    color: transparent;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    left: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    justify-content: flex-end;
+   
+  }
+  
+  .nav-item {
+    height: 60px;
+    width: fit-content;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+   
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+  
+  .nav-item:hover {
+ 
+    background-color: aliceblue;
+   
+  
+  }
+  
+  .nav-links {
+    color: #e9e4e4;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+  
+  .activated {
+    color: #09bef0;
+  }
+  
+  .fa-bars {
+    color: #fff;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+
+
+
+  .buttons {
+   
+   
+  
+    position:absolute;
+      top: -1px;
+      left: 950px;
+     
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: #09bef0;
+ 
+    background-color: rgba(104, 85, 224, 1);
+   border-radius: 10px;
+    margin: 6px 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    
+  }
+  .bt {
+   
+   
+  
+    position: absolute;
+      top: 10px;
+      
+      color: black;
+     left: 850px;
+     cursor: pointer;
+     
+    padding: 5px 20px;
+   
+    font-size: 16px;}
+  
+  @media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: absolute;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      background: #ececf5;
+      left: 0;
+      opacity: 1;
+      transition: all 0.6s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+      color: black;
+      
+    }
+  
+    .nav-links:hover {
+      color: #09bef0;
+      transform: scale(1);
+      transition: all 0.3s ease;
+      color: black;
+     
+  
+    }
+  
+    .nav-item:hover {
+      border: none;
+    }
+  
+    .nav-item {
+      width: 100%;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    
+    .buttons {
+   
+   
+  
+      position: relative;
+        top: -1px;
+        left: 0px;
+       
+      padding: 5px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      border: #09bef0;
+   
+      background-color: rgba(104, 85, 224, 1);
+     border-radius: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+      
+    }
+    .bt {
+   
+   
+  
+      position: relative;
+        top: -1px;
+        left: 0px;
+        cursor: pointer;
+       
+      padding: 5px 20px;}
+  }
+  
+  
+ 

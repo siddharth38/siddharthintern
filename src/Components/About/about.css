@@ -1,0 +1,36 @@
+.trust{
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: black;
+    
+}
+.contain{
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+    background: #fff;
+    border: 1px solid #dddfe2;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+    background: linear-gradient(to left,
+            rgb(201, 146, 201),
+            rgb(71, 35, 197),
+            rgb(50, 50, 184),
+            rgb(4, 158, 138),
+            rgb(19, 230, 230),
+            rgb(14, 128, 204),
+            rgb(170, 134, 134));
+    -webkit-background-clip: text;
+    color: transparent;}

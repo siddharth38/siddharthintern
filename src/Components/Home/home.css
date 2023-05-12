@@ -1,0 +1,23 @@
+
+.you{
+    
+  
+   
+    font-size: 30px;
+    background: linear-gradient(to left,
+            violet,
+            indigo,
+            blue,
+            green,
+            rgb(219, 219, 66),
+            orange
+           );
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.butt {
+   padding: 10px 10px;
+   
+  
+ 
+}
