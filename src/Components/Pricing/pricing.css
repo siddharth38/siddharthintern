@@ -77,3 +77,10 @@
     width: 100%;
     padding: 16px 20px;
 }
+
+.cont:hover {
+    left: -1px;
+    box-shadow: 5px 5px rgb(126, 122, 124);
+    top: -1px;
+  }
+

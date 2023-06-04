@@ -14,7 +14,7 @@ import Chatgpt from './Components/Chatgpt/Chatgpt';
 
 function App() {
   return (
-    <div className="App" >
+    <div  className='axp'>
      
       <Router>
      

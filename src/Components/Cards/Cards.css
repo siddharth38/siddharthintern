@@ -1,0 +1,72 @@
+
+.mcard{
+   
+    display: flex;
+     justify-content: center;
+     width: 100%;
+     height: 100%;
+   
+    margin-left: 1rem;
+    margin-bottom: 0.8rem;
+
+}
+
+.cards{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+    height: 6rem;
+    margin-left: 0.3rem;
+    width: 100%;
+   color: antiquewhite;
+   font-weight: 400;
+   
+   font-size: large;
+   
+    border-radius: 0.7rem;
+    background-color: #00babe;
+  
+}
+.card{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+    height: 6rem;
+    margin-left: 0.3rem;
+    width: 100%;
+
+   color: antiquewhite;
+   font-weight: 400;
+   font-size: large;
+   overflow: hidden;
+    border-radius: 0.7rem;
+    background-color: #21c465;
+  
+}
+.card:hover{
+   
+    color: black;
+    background-color: #fafafa;
+  
+}
+.cards:hover{
+   
+    color: black;
+    background-color: #fafafa;
+  
+}
+
+
+.rating{
+    position: absolute;
+    bottom: 10px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star{
+    width: 10px;
+    margin-right: 3px;
+}

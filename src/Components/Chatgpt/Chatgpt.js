@@ -10,13 +10,14 @@ const Chatgpt = () => {
 
 
     const configuration = new Configuration({
-        apiKey: "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"
+        apiKey: process.env.REACT_APP_API_KEY
+      
       });
       const openai = new OpenAIApi(configuration);
      
       const [result, setResult] = useState("");
       const [input, setInput] = useState("");
-      // console.log(import.meta.env.VITE_Open_AI_Key);
+     
       
     
       const doStuff = async () => {

@@ -14,6 +14,9 @@ const Register = () => {
         reEnterPassword: ""
     })
 
+    const [blur, setblur] = useState("noblur")
+    const [loading, setloading] = useState("noloader")
+
     const handleChange = e => {
         const { name, value } = e.target
         setUser({
@@ -23,21 +26,23 @@ const Register = () => {
     }
 
     const register = () => {
-        const { name, email, password, reEnterPassword } = user
-        if( name && email && password && (password === reEnterPassword)){
-            axios.post("https://mernintern.onrender.com/register", user)
-            .then( res => {
-                alert(res.data.message)
-                localStorage.setItem("user_email", user.email)
-                navigate("/login");
-            })
-        } else {
+
+        setblur("blur");
+        setloading("loader")
+         
             alert("invlid input")
-        }
+            setblur("noblur");
+            setloading("noloader")
         
+        navigate("/login");
     }
 
     return (
+        <div>
+            <div className={blur}>
+        <div className={loading}></div>
+        </div>
+       
         <div className="register">
         
             <h1>Sign up<br/> for an account</h1>
@@ -51,6 +56,7 @@ const Register = () => {
             <div style={{color:"black"}}>{ localStorage.getItem("user_email") ? <><p>Your account has been created for &nbsp;
            { localStorage.getItem("user_email")} Please sign in now </p></> :" " }</div>
 
+        </div>
         </div>
     )
 }

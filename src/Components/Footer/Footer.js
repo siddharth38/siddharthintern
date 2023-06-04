@@ -31,8 +31,8 @@ const footerInfoLinks = [
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <Container className="py-5 mx-5">
+    <div className="footer">
+      <Container className="py-5 ">
         <Row>
        
 
@@ -79,7 +79,7 @@ const Footer = () => {
         <Row>
           
         <Col lg="8" md="8">
-            <h6 style={{color:"grey"}}>    2023 GymGenie. All rights reserved.</h6>
+            <h6 style={{color:"grey"}}>    2023 E-Learning. All rights reserved.</h6>
      
             </Col>
 
@@ -117,7 +117,7 @@ const Footer = () => {
             </Col>
         </Row>
       </Container>
-    </footer>
+    </div>
   );
 };
 

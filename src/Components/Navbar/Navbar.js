@@ -28,11 +28,11 @@ const handleClick = () => {setClick(!click);
 
   return (
     <>
-      <IconContext.Provider value={{ color: "white" }} className="nav-fixed">
+      <IconContext.Provider value={{ color: "white" }} >
         <nav className="navbar">
           <div className="navbar-container container">
            
-            <h1 className="navbar-logo"> GymGenie</h1>
+          
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </div>
@@ -53,11 +53,11 @@ const handleClick = () => {setClick(!click);
               </li> 
               <hr className="hr"></hr>
               <li className="nav-item">
-              GymGenie MealPlan NEW!
+              Premium Features <span style={{color:"green"}}>  &nbsp;NEW!</span>
                
               </li> 
               <li className="nav-item">
-              MacroTracker NEW!
+              MacroTracker <span style={{color:"green"}}>&nbsp; NEW!</span>
                
               </li> 
               <li >
